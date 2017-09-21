@@ -1,0 +1,20 @@
+<div class="row">
+  <h3 align='center'>Project list</h3>
+  <div class="col-md-2">
+    quick <br />
+    links
+  </div>
+  <div class="col-md-9">
+  <% @projects.each do |project| %>
+<%= link_to project.name, project_path(project) %>
+  <%= project.d_pic %>
+  <%= project.name %>
+  <%= project.description %>
+  <% end %>
+
+  </div>
+  <div class="col-md-1">
+social<br />
+links
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<h1>Prices#new</h1>
+<%= form_for @price do |f| %>
+<p><%= f.label :b_amount %></br>
+   <%= f.text_field :b_amount %>
+</p>
+<p><%= f.label :name %></br>
+   <%= f.text_field :name %>
+</p>
+<p><%= f.label :description %></br>
+   <%= f.text_field :description %>
+</p>
+<p><%= f.submit %>
+</p>
+<% end %>

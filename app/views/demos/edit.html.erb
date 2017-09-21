@@ -1,0 +1,29 @@
+<%= form_for @demo do |f| %>
+<p><%= f.label :d_pic %></br>
+   <%= f.text_field :d_pic %>
+</p>
+<p><%= f.label :m_pic %></br>
+   <%= f.text_field :m_pic %>
+</p>
+<p><%= f.label :t_pic %></br>
+   <%= f.text_field :t_pic %>
+</p>
+<p><%= f.label :r1_pic %></br>
+   <%= f.text_field :r1_pic %>
+</p>
+<p><%= f.label :r2_pic %></br>
+   <%= f.text_field :r2_pic %>
+</p>
+<p><%= f.label :name %></br>
+   <%= f.text_field :name %>
+</p>
+<p><%= f.label :b_amount %></br>
+   <%= f.text_field :b_amount %>
+</p>
+<p><%= f.label :description %></br>
+   <%= f.text_field :description %>
+</p>
+<p><%= f.submit %>
+</p>
+<% end %>
+<%= button_to 'Delete', @demo, method: :delete, data: {confirm: 'are you sure?'}%>

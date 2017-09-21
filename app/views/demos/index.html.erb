@@ -1,0 +1,41 @@
+
+
+<div class="row">
+  <h3 align='center'>viewing a list of existing demos</h3>
+  <div class="col-md-2">
+
+
+    quick <br />
+    links
+
+
+
+
+  </div>
+  <div class="col-md-9">
+    <div class="well well-sm">
+      <p>explore our demos
+      </p>
+      <p>Choose a demo that closely resembles what you have in mind; function/look wise.
+      </p>
+      <p>Choose several if you so desire. The demos only serve as a way of description; they are not static to look or function.
+      </p>
+      <p>:( , haven't found what you have in mind? Mail us here because we love having new days in the office :)</p>
+      <p>Mail us here or check the pricing here; then mail us here</p>
+    </div>
+    <% @demos.each do |demo| %>
+  <%= link_to demo.name, demo_path(demo) %>
+    <%= demo.d_pic %>
+    <%= demo.m_pic %>
+    <%= demo.t_pic %>
+    <%= demo.r1_pic %>
+    <%= demo.r2_pic %>
+    <%= demo.b_amount %>
+    <%= demo.description %>
+    <% end %>
+  </div>
+  <div class="col-md-1">
+social<br />
+links
+  </div>
+</div>

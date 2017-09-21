@@ -1,0 +1,24 @@
+<div class="row">
+  <h4 align='center'>  we talk... </h4>
+  <div class="col-md-2">
+
+
+    quick <br />
+    links
+
+
+
+  </div>
+    <div class="col-md-9">
+<% @posts.each do |post| %>
+  <div class='post_wrapper'>
+    <h2 class='title'><%= link_to post.title, post %></h2>
+    <p class='date'><%= post.created_at.strftime('%B, %d, %y') %></p>
+  </div>
+<% end %>
+  </div>
+  <div class="col-md-1">
+social<br />
+links
+  </div>
+</div>

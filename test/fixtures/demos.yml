@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  d_pic: 
+  m_pic: 
+  t_pic: 
+  r1_pic: 
+  r2_pic: 
+  name: MyString
+  b_amount: MyString
+  description: MyText
+
+two:
+  d_pic: 
+  m_pic: 
+  t_pic: 
+  r1_pic: 
+  r2_pic: 
+  name: MyString
+  b_amount: MyString
+  description: MyText

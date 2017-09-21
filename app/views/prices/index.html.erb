@@ -1,0 +1,20 @@
+<div class="row">
+  <h3 align='center'>Pricing list</h3>
+  <div class="col-md-2">
+    quick <br />
+    links
+  </div>
+  <div class="col-md-9">
+  <% @prices.each do |price| %>
+<%= link_to price.name, price_path(price) %>
+  <%= price.b_amount %>
+  <%= price.name %>
+  <%= price.description %>
+  <% end %>
+
+  </div>
+  <div class="col-md-1">
+social<br />
+links
+  </div>
+</div>

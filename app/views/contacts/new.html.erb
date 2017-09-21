@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-2">
+    quick <br />
+    links
+  </div>
+  <div class="col-md-9">
+<div align="center">
+  <h3>Send A message to Us</h3>
+
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.country_select :country %> 
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+  </div>
+</div>
+<div class="col-md-1">
+social<br />
+links
+</div>
+</div>

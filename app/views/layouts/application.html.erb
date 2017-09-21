@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sitehakas</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+<header>
+  <div class="row">
+    <div class="col-md-8">
+<div class="text-center">
+  <div class="btn-group" role="group" aria-label="..." >
+
+  <%=link_to 'Home', root_path, :class => "btn" %>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      We
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#"><%=link_to 'Our_Wiki', pages_blog_path %></a></li>
+      <li><a href="#"><%=link_to 'Our_Philosophy', pages_our_thing_path %></a></li>
+    </ul>
+
+
+    <div class="btn-group" role="group">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Work
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#"><%=link_to 'Demo Page', demos_path %></a></li>
+        <li><a href="#"><%=link_to 'Projects', projects_path %></a></li>
+      </ul>
+
+  </div>
+
+  <%=link_to 'Contact us', contacts_new_path, :class => "btn"  %>
+  <%=link_to 'Blog', posts_path, :class => "btn"  %>
+
+  </div>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+<p class="navbar-text pull-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn' %> |
+  <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'btn'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'btn'  %>
+<% end %>
+</p>
+</div>
+
+  </div>
+</header>
+  <body>
+  <main role="main">
+<div class="container-fluid">
+  <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert"><%= alert %></p>
+<% end %>
+    <%= yield %>
+</div>
+  </main>
+  </body>
+</html>

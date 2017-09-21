@@ -1,0 +1,15 @@
+we edit projects
+<%= form_for @project do |f| %>
+<p><%= f.label :d_pic %></br>
+   <%= f.text_field :d_pic %>
+</p>
+<p><%= f.label :name %></br>
+   <%= f.text_field :name %>
+</p>
+<p><%= f.label :description %></br>
+   <%= f.text_field :description %>
+</p>
+<p><%= f.submit %>
+</p>
+<% end %>
+<%= button_to 'Delete', @project, method: :delete, data: {confirm: 'are you sure?'}%>
