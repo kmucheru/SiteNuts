@@ -1,0 +1,98 @@
+
+@import "bootstrap-sprockets";
+
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+//stuff that guys like for some wierd reason; I am one of them.
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+    cursor: hand;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+// for some reason; I was lazy to impliment a contact database
+.hidden { display: none; }
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+//excuse ends here; gladly
+
+.menu {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+
+nav_bar .active {
+    color:            #F8F8F8;
+    background-color: #4f81bd;
+}
+
+.navbar-header{
+  background-color: #446600;
+}
+.navbar-nav{
+  background-color: #001a09;
+}
+.panel-body{
+  background-color: #e0e0d1;
+}
+
+
+body {
+    background-color: #434848;
+}
+h3{
+  color: #001a00;
+}

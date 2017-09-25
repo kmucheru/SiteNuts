@@ -10,20 +10,19 @@
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
-    <%= f.country_select :country %> 
+    <%= f.country_select :country, :class => 'button1' %>
     <%= f.input :message, :as => :text, :required => true %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
     <div>
       </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+      <%= f.button :submit, 'Send message', :class => 'button1'%>
     </div>
   <% end %>
   </div>
 </div>
 <div class="col-md-1">
-social<br />
-links
+<i class="fa fa-facebook"></i> | <i class="fa fa-twitter"></i> | <i class="fa fa-envelope"></i>
 </div>
 </div>

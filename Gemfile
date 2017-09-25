@@ -35,7 +35,7 @@ gem 'simple_form', '~> 3.5'
 gem 'country_select', '~> 3.1'
 gem 'mail_form'
 # gem 'capistrano-rails', group: :development
-
+gem 'font-awesome-sass', '~> 4.7.0'
 group :development, :test do
 gem 'foreman'
 end
@@ -57,10 +57,3 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-
-gem 'capistrano', '~> 3.9', '>= 3.9.1'
-gem 'capistrano-rails'
-gem 'capistrano-passenger'
-
-gem 'capistrano-rbenv'
