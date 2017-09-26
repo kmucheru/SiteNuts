@@ -13,15 +13,36 @@
 
   </div>
   <div class="col-md-9">
-    <div class="well well-sm">
-      <p>explore our demos
-      </p>
-      <p>Choose a demo that closely resembles what you have in mind; function/look wise.
-      </p>
-      <p>Choose several if you so desire. The demos only serve as a way of description; they are not static to look or function.
-      </p>
-      <p>:( , haven't found what you have in mind? Mail us here because we love having new days in the office :)</p>
-      <p>Mail us here or check the pricing here; then mail us here</p>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                What we have in store
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+          <div class="panel-body">
+            <p>Here we present what is ready (and functional); ready to be cloned your way</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Open Requests
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <p>Get your unique idea made from scratch</p>
+          </div>
+        </div>
+      </div>
     </div>
     <% @demos.each do |demo| %>
   <%= link_to demo.name, demo_path(demo) %>

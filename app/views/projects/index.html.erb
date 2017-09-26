@@ -5,6 +5,25 @@
     links
   </div>
   <div class="col-md-9">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Ideas We Run
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  <p>Because we love seeing our work at work</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
   <% @projects.each do |project| %>
 <%= link_to project.name, project_path(project) %>
   <%= project.d_pic %>
@@ -14,6 +33,6 @@
 
   </div>
   <div class="col-md-1">
-<i class="fa fa-facebook"></i> | <i class="fa fa-twitter"></i> | <i class="fa fa-envelope"></i>
+<i class="fa fa-facebook fa-1x"></i> | <i class="fa fa-twitter fa-1x"></i> | <i class="fa fa-envelope fa-1x"></i>|
   </div>
 </div>
