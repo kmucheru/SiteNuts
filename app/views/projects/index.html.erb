@@ -1,10 +1,12 @@
 <div class="row">
   <h3 align='center'>Project list</h3>
-  <div class="col-md-2">
-    quick <br />
-    links
+  <div class="col-md-1">
+    <div class="contain">
+    <%= image_tag("rails.png", class: "img-responsive") %>
+    <%= image_tag("reb.png", class: "img-responsive") %>
   </div>
-  <div class="col-md-9">
+</div>
+  <div class="col-md-10">
 
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
@@ -25,10 +27,12 @@
 
 
   <% @projects.each do |project| %>
+
+  <%= image_tag(project.pic1.url, alt: project.name, class: 'img-thumbnail') if project.pic1_stored? %>
+
 <%= link_to project.name, project_path(project) %>
-  <%= project.d_pic %>
   <%= project.name %>
-  <%= project.description %>
+  <%= project.description %><br><hr><br>
   <% end %>
 
   </div>

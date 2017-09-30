@@ -1,24 +1,24 @@
 
-
 <div class="row">
   <h3 align='center'>viewing a list of existing demos</h3>
-  <div class="col-md-2">
+  <div class="col-md-1">
 
+    <div class="contain">
+    <%= image_tag("rails.png", class: "img-responsive") %>
 
-    quick <br />
-    links
-
+    <%= image_tag("reb.png", class: "img-responsive") %>
+    </div>
 
 
 
   </div>
-  <div class="col-md-9">
+  <div class="col-md-10">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFive">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                What we have in store
+                All Prices INCLUSIVE of Development, Domain, Hosting and Premium Support.
             </a>
           </h4>
         </div>
@@ -29,31 +29,29 @@
         </div>
       </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-          <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Open Requests
-            </a>
-          </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-          <div class="panel-body">
-            <p>Get your unique idea made from scratch</p>
-          </div>
-        </div>
-      </div>
+
     </div>
     <% @demos.each do |demo| %>
   <%= link_to demo.name, demo_path(demo) %>
-    <%= demo.d_pic %>
-    <%= demo.m_pic %>
-    <%= demo.t_pic %>
-    <%= demo.r1_pic %>
-    <%= demo.r2_pic %>
+    <%= image_tag(demo.dpic.url, alt: demo.name, class: 'img-thumbnail') if demo.dpic_stored? %>
+
     <%= demo.b_amount %>
-    <%= demo.description %>
+    <%= demo.description %><hr><br>
     <% end %>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Open Requests
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <p>Get your unique idea made from scratch</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="col-md-1">
 <i class="fa fa-facebook"></i> | <i class="fa fa-twitter"></i> | <i class="fa fa-envelope"></i>

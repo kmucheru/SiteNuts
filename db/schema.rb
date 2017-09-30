@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170817005708) do
+ActiveRecord::Schema.define(version: 20170928065650) do
 
   create_table "comments", force: :cascade do |t|
     t.string "name"
@@ -27,16 +27,16 @@ ActiveRecord::Schema.define(version: 20170817005708) do
   end
 
   create_table "demos", force: :cascade do |t|
-    t.binary "d_pic"
-    t.binary "m_pic"
-    t.binary "t_pic"
-    t.binary "r1_pic"
-    t.binary "r2_pic"
     t.string "name"
     t.string "b_amount"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "dpic_uid"
+    t.string "mpic_uid"
+    t.string "tpic_uid"
+    t.string "r1pic_uid"
+    t.string "r2pic_uid"
   end
 
   create_table "order_items", force: :cascade do |t|
@@ -92,11 +92,11 @@ ActiveRecord::Schema.define(version: 20170817005708) do
   end
 
   create_table "projects", force: :cascade do |t|
-    t.binary "d_pic"
     t.string "name"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "pic1_uid"
   end
 
   create_table "users", force: :cascade do |t|

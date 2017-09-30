@@ -1,10 +1,12 @@
 <div class="row">
-  <div class="col-md-2">
-    quick <br />
-    links
+  <div class="col-md-1">
+    <div class="contain">
+    <%= image_tag("rails.png", class: "img-responsive") %>
+    <%= image_tag("reb.png", class: "img-responsive") %>
   </div>
-  <div class="col-md-9">
-<%= @project.d_pic %>
+  </div>
+  <div class="col-md-10">
+<%= image_tag @project.pic1.thumb('400x200#').url if @project.pic1_stored? %>
 <%= @project.name %>
 <%= @project.description %>
 </div>

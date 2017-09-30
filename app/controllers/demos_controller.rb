@@ -43,7 +43,7 @@ class DemosController < ApplicationController
   private
 
   def demo_params
-    params.require(:demo).permit(:d_pic, :m_pic, :t_pic, :r1_pic, :r2_pic, :name, :b_amount, :description)
+    params.require(:demo).permit(:dpic, :mpic, :tpic, :r1pic, :r2pic, :name, :b_amount, :description)
   end
 
   def verify_is_admin

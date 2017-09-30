@@ -1,7 +1,7 @@
 we edit projects
 <%= form_for @project do |f| %>
 <p><%= f.label :d_pic %></br>
-   <%= f.text_field :d_pic %>
+   <%= image_tag @project.pic1.thumb('400x200#').url if @project.pic1_stored? %>
 </p>
 <p><%= f.label :name %></br>
    <%= f.text_field :name %>

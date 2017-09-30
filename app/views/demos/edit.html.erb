@@ -1,18 +1,18 @@
 <%= form_for @demo do |f| %>
 <p><%= f.label :d_pic %></br>
-   <%= f.text_field :d_pic %>
+   <%= image_tag @demo.dpic.thumb('400x200#').url if @demo.dpic_stored? %>
 </p>
 <p><%= f.label :m_pic %></br>
-   <%= f.text_field :m_pic %>
+   <%= image_tag @demo.mpic.thumb('400x200#').url if @demo.mpic_stored? %>
 </p>
 <p><%= f.label :t_pic %></br>
-   <%= f.text_field :t_pic %>
+   <%= image_tag @demo.tpic.thumb('400x200#').url if @demo.tpic_stored? %>
 </p>
 <p><%= f.label :r1_pic %></br>
-   <%= f.text_field :r1_pic %>
+   <%= image_tag @demo.r1pic.thumb('400x200#').url if @demo.r1pic_stored? %>
 </p>
 <p><%= f.label :r2_pic %></br>
-   <%= f.text_field :r2_pic %>
+   <%= image_tag @demo.r2pic.thumb('400x200#').url if @demo.r2pic_stored? %>
 </p>
 <p><%= f.label :name %></br>
    <%= f.text_field :name %>

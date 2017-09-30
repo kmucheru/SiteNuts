@@ -43,7 +43,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:d_pic, :name, :description)
+    params.require(:project).permit(:pic1, :name, :description)
   end
 
   def verify_is_admin
