@@ -86,7 +86,11 @@ text-align: left;
     background-color:#4d4d4d;
     color:#ffffff;
     border-radius:0;
+
+    width: 100%;
+    z-index: 9;
 }
+
 
 .navbar-custom .navbar-toggle .icon-bar {
     background-color: black;
@@ -98,10 +102,16 @@ text-align: left;
     color: #737373;
 }
 
-
+.panel-default > .panel-heading-custom{
+  background-image: none;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  border-radius:0;
+}
 .panel-body{
   background-color: #d9d9d9;
   color: #1a1a1a;
+
 }
 
 
@@ -134,4 +144,43 @@ i{
 }
 .contain {
   overflow: hidden;
+}
+a {
+    color: #000066;
+}
+table{
+    background-color: #808080;
+    color: #0d0d0d;
+
+}
+.demo
+{
+  color: #262626;
+  letter-spacing: 2px;
+  font-size: 1.250em;
+}
+
+tr:hover {background-color: #bfbfbf}
+
+.price{
+  color: #262626;
+  padding-top: 25px;
+  padding-left:15px;
+  background-color: #808080;
+   font-stretch: expanded;
+}
+
+.bamount{
+  font-size: 130%;
+}
+.bname{
+  font-size: 200%;
+  font-style: oblique;
+  text-align: right;
+
+}
+.bdescrp{
+  text-align: left;
+  font-size: 170%;
+
 }

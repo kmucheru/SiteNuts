@@ -15,7 +15,7 @@
   <div class="col-md-10">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFive">
+        <div class="panel-heading panel-heading-custom" role="tab" id="headingFive">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 All Prices INCLUSIVE of Development, Domain, Hosting and Premium Support.
@@ -32,14 +32,19 @@
 
     </div>
     <% @demos.each do |demo| %>
+    <div class="demo">
+
   <%= link_to demo.name, demo_path(demo) %>
     <%= image_tag(demo.dpic.url, alt: demo.name, class: 'img-thumbnail') if demo.dpic_stored? %>
 
-    <%= demo.b_amount %>
-    <%= demo.description %><hr><br>
+  <br>
+   <p style="text-align:right" > <%= demo.description %> </p>
+
+    </div>
+    <hr><br>
     <% end %>
     <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingTwo">
+      <div class="panel-heading panel-heading-custom" role="tab" id="headingTwo">
         <h4 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Open Requests

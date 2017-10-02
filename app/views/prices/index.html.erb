@@ -1,20 +1,20 @@
 <div class="row">
   <h3 align='center'>Pricing list</h3>
-  <div class="col-md-2">
-    quick <br />
-    links
+  <div class="col-md-1">
+    <div class="contain">
+    <%= image_tag("rails.png", class: "img-responsive") %>
+    <%= image_tag("reb.png", class: "img-responsive") %>
   </div>
-  <div class="col-md-9">
+  </div>
+  <div class="col-md-10">
+    <table class="table">
+      <tr><th>Component_name</th><th>Component_use</th></tr>
   <% @prices.each do |price| %>
-<%= link_to price.name, price_path(price) %>
-  <%= price.b_amount %>
-  <%= price.name %>
-  <%= price.description %>
+<tr><td><%= link_to price.name, price_path(price) %></td><td><%= price.description %></td></tr>
   <% end %>
-
+    </table>
   </div>
   <div class="col-md-1">
-social<br />
-links
+<i class="fa fa-facebook fa-1x"></i> | <i class="fa fa-twitter fa-1x"></i> | <i class="fa fa-envelope fa-1x"></i>|
   </div>
 </div>

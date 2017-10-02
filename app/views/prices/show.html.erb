@@ -1,15 +1,20 @@
 <div class="row">
-  <div class="col-md-2">
-    quick <br />
-    links
+  <div class="col-md-1">
+    <div class="contain">
+    <%= image_tag("rails.png", class: "img-responsive") %>
+    <%= image_tag("reb.png", class: "img-responsive") %>
   </div>
-  <div class="col-md-9">
-<%= @price.b_amount %>
-<%= @price.name %>
-<%= @price.description %>
+  </div>
+  <div class="col-md-10">
+<div class="price">
+  <p class="bname"><%= @price.name %></p><br>
+  <p class="bdescrp"><%= @price.description %></p><br>
+<p class="bamount"><%= @price.b_amount %> $</p><br>
+
+  <%= simple_format(@price.indepth) %>
+</div>
 </div>
 <div class="col-md-1">
-social<br />
-links
+<i class="fa fa-facebook fa-1x"></i> | <i class="fa fa-twitter fa-1x"></i> | <i class="fa fa-envelope fa-1x"></i>|
 </div>
 </div>

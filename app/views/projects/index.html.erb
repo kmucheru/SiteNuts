@@ -10,7 +10,7 @@
 
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingFive">
+              <div class="panel-heading panel-heading-custom" role="tab" id="headingFive">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                       Ideas We Run
@@ -27,12 +27,14 @@
 
 
   <% @projects.each do |project| %>
-
+<div class="demo">
   <%= image_tag(project.pic1.url, alt: project.name, class: 'img-thumbnail') if project.pic1_stored? %>
 
-<%= link_to project.name, project_path(project) %>
-  <%= project.name %>
-  <%= project.description %><br><hr><br>
+<%= link_to project.name, project_path(project) %><br>
+
+  <p style="text-align:right" ><%= project.description %></p>
+  <br><hr><br>
+</div>
   <% end %>
 
   </div>

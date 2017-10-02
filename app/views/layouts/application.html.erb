@@ -21,12 +21,13 @@
         });
     });
 </script>
+
   </head>
 <header>
   <div class="row">
 
       <div class="menu">
-        <nav class="navbar navbar-custom ">
+        <nav class="navbar navbar-custom " data-spy="affix" data-offset-top="50">
  <div class="container-fluid">
    <div class="navbar-header">
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -42,6 +43,7 @@
        <li><%=link_to 'Our_Wiki', pages_blog_path %></li>
        <li><%=link_to 'Our_Philosophy', pages_our_thing_path %></li>
        <li><%=link_to 'Demo Page', demos_path %></li>
+       <li><%=link_to 'Pricing', prices_path %></li>
        <li><%=link_to 'Projects', projects_path %></li>
        <li><%=link_to 'Contact us', contacts_new_path  %></li>
 
