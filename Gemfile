@@ -55,6 +55,7 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-passenger', '>= 0.1.1'
+  gem 'capistrano-rbenv'
 
   # Remove the following if your app does not use Rails
   gem 'capistrano-rails'
