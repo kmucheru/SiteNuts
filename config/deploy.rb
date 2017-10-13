@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 
-require "bundler/capistrano"
+
 set :application, "webelfs"
 set :repo_url, "https://github.com/kmucheru/SiteNuts.git"
 
