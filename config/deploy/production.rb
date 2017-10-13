@@ -1,5 +1,5 @@
 
-server '178.62.110.117', user: 'deploy', roles: %w{app db web}
+#server '178.62.110.117', user: 'rails', roles: %w{app db web}
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -8,7 +8,9 @@ server '178.62.110.117', user: 'deploy', roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-
+role :app, %w{rails@178.62.110.117}
+role :web, %w{rails@178.62.110.117}
+role :db,  %w{rails@178.62.110.117}
 
 
 # role-based syntax

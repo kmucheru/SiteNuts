@@ -9,11 +9,6 @@ resources "contacts", only: [:new, :create]
   devise_for :users
   root 'home#index'
 
-  get 'home/show'
-
-  get 'home/edit'
-
-  get 'home/new'
 
   resources :posts do
     resources :comments
