@@ -1,3 +1,4 @@
+set :rbenv_ruby, '2.4.0'
 # Load DSL and set up stages
 require "capistrano/setup"
 
