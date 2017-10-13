@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 
-
+set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
 set :application, "webelfs"
 set :repo_url, "https://github.com/kmucheru/SiteNuts.git"
 
