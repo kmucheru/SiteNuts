@@ -34,7 +34,7 @@ gem 'rack-cache', :require => 'rack/cache'
 gem 'devise'
 # Use Capistrano for deployment
 gem 'simple_form', '~> 3.5'
-gem 'country_select', '~> 3.1'
+
 gem 'mail_form'
 # gem 'capistrano-rails', group: :development
 gem 'font-awesome-sass', '~> 4.7.0'

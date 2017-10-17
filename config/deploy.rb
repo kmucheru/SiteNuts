@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 
-set :rbenv_custom_path, '/home/rails/.rbenv/bin/rbenv'
+
 set :application, "webelfs"
 set :repo_url, "https://github.com/kmucheru/SiteNuts.git"
 

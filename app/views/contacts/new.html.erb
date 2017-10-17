@@ -12,7 +12,7 @@
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
-    <%= f.country_select :country, :class => 'button1' %>
+    
     <%= f.input :message, :as => :text, :required => true %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
