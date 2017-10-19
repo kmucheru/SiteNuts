@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 
-
+set :rails_env, 'production'
 set :application, "webelfs"
 set :repo_url, "https://github.com/kmucheru/SiteNuts.git"
 
