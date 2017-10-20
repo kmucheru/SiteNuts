@@ -11,7 +11,7 @@
 role :app, %w{rails@178.62.110.117}
 role :web, %w{rails@178.62.110.117}
 role :db,  %w{rails@178.62.110.117}
-set :rails_env, 'production'
+
 
 # role-based syntax
 # ==================
