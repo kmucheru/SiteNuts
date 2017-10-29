@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'dragonfly', '~> 1.1.3'
 gem 'rack-cache', :require => 'rack/cache'
 # gem 'bcrypt', '~> 3.1.7'
+gem 'mailgun-ruby', '~>1.1.6'
 gem 'devise'
 # Use Capistrano for deployment
 gem 'simple_form', '~> 3.5'
