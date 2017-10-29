@@ -1,3 +1,4 @@
+
 # Load DSL and set up stages
 require "capistrano/setup"
 
@@ -29,9 +30,9 @@ install_plugin Capistrano::SCM::Git
 # require "capistrano/rvm"
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
-# require "capistrano/bundler"
-# require "capistrano/rails/assets"
-# require "capistrano/rails/migrations"
+require "capistrano/bundler"
+require "capistrano/rails/assets"
+require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
@@ -42,4 +43,4 @@ require 'capistrano/passenger'
 
 require 'capistrano/rbenv'
  set :rbenv_type, :user
- set :rbenv_ruby, '2.4.1'
+ set :rbenv_ruby, '2.4.0'

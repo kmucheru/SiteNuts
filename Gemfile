@@ -27,6 +27,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
+gem 'listen', '>= 3.0.5', '< 3.2'
 # Use ActiveModel has_secure_password
 gem 'dragonfly', '~> 1.1.3'
 gem 'rack-cache', :require => 'rack/cache'
@@ -35,7 +36,7 @@ gem 'mailgun-ruby', '~>1.1.6'
 gem 'devise'
 # Use Capistrano for deployment
 gem 'simple_form', '~> 3.5'
-gem 'country_select', '~> 3.1'
+
 gem 'mail_form'
 # gem 'capistrano-rails', group: :development
 gem 'font-awesome-sass', '~> 4.7.0'
@@ -53,10 +54,12 @@ group :development, :test do
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-passenger', '>= 0.1.1'
+  gem 'capistrano-rbenv'
+
+  gem 'capistrano-rails'
+
+
 end
