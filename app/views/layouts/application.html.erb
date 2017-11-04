@@ -39,10 +39,10 @@
    </div>
    <div class="collapse navbar-collapse" id="myNavbar">
      <ul class="nav navbar-nav">
-       <li ><%=link_to 'Home', root_path %></li>
+       <li><%=link_to 'Home', root_path %></li>
        <li><%=link_to 'Our_Wiki', pages_blog_path %></li>
        <li><%=link_to 'Our_Philosophy', pages_our_thing_path %></li>
-       <li><%=link_to 'Demo_Page', demos_path %></li>
+       <li><%=link_to 'Demos', demos_path %></li>
        <li><%=link_to 'Pricing', prices_path %></li>
        <li><%=link_to 'Projects', projects_path %></li>
        <li><%=link_to 'Contact_us', contacts_new_path  %></li>
@@ -63,9 +63,7 @@
   <body>
   <main role="main">
 <div class="container-fluid">
-  <% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
+
 <% if alert %>
   <p class="alert"><%= alert %></p>
 <% end %>

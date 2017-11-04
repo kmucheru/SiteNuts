@@ -12,7 +12,7 @@
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
-    
+
     <%= f.input :message, :as => :text, :required => true %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
@@ -25,6 +25,6 @@
   </div>
 </div>
 <div class="col-md-1">
-<i class="fa fa-facebook fa-1x"></i> | <i class="fa fa-twitter fa-1x"></i> | <i class="fa fa-envelope fa-1x"></i>|
+<i class="fa fa-facebook fa-1x"></i> | <i class="fa fa-envelope fa-1x"></i>
 </div>
 </div>
