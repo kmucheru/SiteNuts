@@ -126,7 +126,7 @@ body {
 h3{
   color: #1a1a1a;
 }
-
+h1 { text-align:center; }
 i{
 
   color:#990000;
@@ -195,3 +195,11 @@ div {
 .intro{
   text-align:center
 }
+
+.desktop{
+  height: 100px;
+    width: 500px;}
+.mobile{}
+.mobilelandscape{}
+.tablet{}
+.tabletlandscape{}

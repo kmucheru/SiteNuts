@@ -7,16 +7,24 @@
   </div>
   <div class="col-md-10">
 <h1>Demos</h1>
-<%= image_tag @demo.dpic.thumb('400x200#').url if @demo.dpic_stored? %>
-<%= image_tag @demo.mpic.thumb('400x200#').url if @demo.dpic_stored? %>
-<%= image_tag @demo.tpic.thumb('400x200#').url if @demo.dpic_stored? %>
-<%= image_tag @demo.r1pic.thumb('400x200#').url if @demo.dpic_stored? %>
-<%= image_tag @demo.r2pic.thumb('400x200#').url if @demo.dpic_stored? %><br>
-<%= @demo.name %>
-<%= @demo.b_amount %>
+<div class="desktop">
+desktop_view
+<%= image_tag @demo.dpic.thumb('144x90#').url if @demo.dpic_stored? %>
+</div>
+mobile_view
+<%= image_tag @demo.mpic.thumb('41x73#').url if @demo.mpic_stored? %>
+mobile landscape_view
+<%= image_tag @demo.tpic.thumb('73x41#').url if @demo.tpic_stored? %>
+tablet/i-pad_view
+<%= image_tag @demo.r1pic.thumb('77x102#').url if @demo.r1pic_stored? %>
+landscaped tablet/i-pad_view
+<%= image_tag @demo.r2pic.thumb('102x77#').url if @demo.r2pic_stored? %><br>
+<h2>description</h2>
+<%= @demo.name %><br>
+<%= @demo.b_amount %><br>
 <%= @demo.description %>
 </div>
 <div class="col-md-1">
-<i class="fa fa-facebook"></i> | <i class="fa fa-twitter"></i> | <i class="fa fa-envelope"></i>
+<i class="fa fa-facebook"></i> | <i class="fa fa-envelope"></i>
 </div>
 </div>
