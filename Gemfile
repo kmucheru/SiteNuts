@@ -59,7 +59,6 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-passenger', '>= 0.1.1'
   gem 'capistrano-rbenv'
-
   gem 'capistrano-rails'
 
 
