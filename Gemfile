@@ -32,6 +32,7 @@ gem 'listen', '>= 3.0.5', '< 3.2'
 gem 'dragonfly', '~> 1.1.3'
 gem 'rack-cache', :require => 'rack/cache'
 # gem 'bcrypt', '~> 3.1.7'
+
 gem 'mailgun-ruby', '~>1.1.6'
 gem 'devise'
 # Use Capistrano for deployment
