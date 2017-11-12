@@ -8,9 +8,9 @@
   </div>
   <div class="col-md-10">
     <table class="table">
-      <tr><th>Component_name</th><th>Component_use</th></tr>
+      <tr><th>Component_name</th><th>Component_use</th><th>price</th></tr>
   <% @prices.each do |price| %>
-<tr><td><%= link_to price.name, price_path(price) %></td><td><%= price.description %></td></tr>
+<tr><td><%= link_to price.name, price_path(price) %></td><td><%= price.description %></td><td><%= price.b_amount %>$</td></tr>
   <% end %>
     </table>
   </div>

@@ -27,7 +27,7 @@ class PricesController < ApplicationController
 
   def update
     @price = Price.find(params[:id])
-    if @price.update(params[:price].permit(:b_amount, :name, :description, :indepth))
+    if @price.update(params[:price].permit(:b_amount, :name, :description, :indepth, :features))
       redirect_to price_path
     else
       render 'edit'
@@ -40,10 +40,11 @@ class PricesController < ApplicationController
     redirect_to prices_path
   end
 
+
   private
 
   def price_params
-    params.require(:price).permit(:b_amount, :name, :description, :indepth)
+    params.require(:price).permit(:b_amount, :name, :description, :indepth, :features)
   end
 
   def verify_is_admin
