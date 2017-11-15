@@ -1,4 +1,4 @@
-
+Rake::Task[:production].invoke
 # Load DSL and set up stages
 require "capistrano/setup"
 
