@@ -10,9 +10,9 @@
   <p class="bname"><%= @price.name %></p><br>
   <p class="bdescrp"><%= @price.description %></p><br>
 <p class="bamount"><%= @price.b_amount %> $</p><br>
-Suggested_for
+<p class="bamount">Suggested_for</p>
   <%= simple_format(@price.indepth) %>
-Features
+<p class="bamount">Features</p>
   <%= simple_format(@price.features) %>
 Please check <%= link_to demos_path do %>demo_page<% end %> for demo example (it is similar in pricing)
 </div>
