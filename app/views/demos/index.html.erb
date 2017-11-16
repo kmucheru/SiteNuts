@@ -33,13 +33,14 @@
     <% @demos.each do |demo| %>
     <div class="demo">
 
-  <%= link_to demo.name, demo_path(demo) %>
+  <%= link_to demo.name, demo_path(demo) %><br>
+  <%= link_to demo_path(demo) do %>
     <%= image_tag(demo.dpic.url, alt: demo.name, class: 'img-thumbnail') if demo.dpic_stored? %>
-
+    <% end %>
   <br>
    <p style="text-align:right" > <%= demo.description %> </p>
   <br>
-  <p style="text-align:left" > <%= demo.b_amount %> </p>
+  <p style="text-align:left" > <%= demo.b_amount %>_$ </p>
     </div>
     <hr><br>
     <% end %>

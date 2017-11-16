@@ -33,10 +33,15 @@ landscaped tablet/i-pad_view<br>
 
 <hr>
 <h2 style="text-align: center">Description</h2>
-<%= @demo.name %><br>
-<%= @demo.b_amount %>$<br>
-<%= @demo.description %><br>
+<table>
+  <tr><th>Name:</th> <td><%= @demo.name %></td></tr>
+  <tr><th>Base_cost:</th> <td><%= @demo.b_amount %></td></tr>
+  <tr><th>Use:</th> <td><%= @demo.description %></td></tr>
+
+</table><br><br>
+<div class="back">
 <%= link_to 'Back', :back %>
+</div>
 </div>
 <div class="col-md-1">
 <i class="fa fa-facebook"></i> | <i class="fa fa-envelope"></i>
