@@ -35,7 +35,8 @@
 
   <%= link_to demo.name, demo_path(demo) %><br>
   <%= link_to demo_path(demo) do %>
-    <%= image_tag(demo.dpic.url, alt: demo.name, class: 'img-thumbnail') if demo.dpic_stored? %>
+
+    <%= image_tag (demo.tpic.thumb('244x137#')).url %>
     <% end %>
   <br>
    <p style="text-align:right" > <%= demo.description %> </p>
